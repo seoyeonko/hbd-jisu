@@ -11,11 +11,12 @@ const globalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
     body {
-        font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        /* font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+        font-family: "Comic Sans MS", cursive, sans-serif;
         font-size: 24px;
         background-color: #EEE6FF;
         color: black;
-        /* padding-top: 80px; */
+        
     }
 `;
 
