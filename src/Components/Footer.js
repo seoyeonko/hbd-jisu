@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <FooterBox>
       <div>💜 Happy JISU Day 💜</div>
-      #지수의_눈부신_앞날을_응원해 #오늘만큼은_지수천사 #솔직히_감동이지?
+      #지수의_눈부신_앞날을_응원해 #오늘만큼은_지수1004 #솔직히_감동이지?
       <div>Made by. Seoyeon & Gahee</div>
     </FooterBox>
   );
