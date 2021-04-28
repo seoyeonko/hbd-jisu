@@ -88,6 +88,8 @@ const ImageSlider = ({ slides }) => {
               {index === current && (
                 <img src={slide.image} alt="our Photos" className="image" />
               )}
+              {index === current && <span>{slide.date + " | "}</span>}
+              {index === current && <span>{slide.description}</span>}
             </div>
           );
         })}
