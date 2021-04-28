@@ -10,18 +10,10 @@ const Container = styled.div`
     margin: 20px;
   }
 `;
-const List = styled.ul`
-  display: flex;
-`;
-const Item = styled.li`
-  margin: 0px 80px;
-  font-size: 24px;
-  color: #000000;
-`;
-const SLink = styled(Link)`
-  div {
-    /* flex-direction: column; */
-  }
+
+const LetterBox = styled(Link)`
+  display: block;
+  margin: 40px 0px;
 `;
 
 const Letter = () => {
@@ -29,36 +21,20 @@ const Letter = () => {
     <Container>
       <p>📮 TO. Jisu</p>
 
-      <List>
-        <Item>
-          <SLink to="/letter/seoyeon">
-            <div>
-              <img
-                src="/Images/msg_blue.png"
-                alt="logo_lettering"
-                width="25%"
-              />
-              <span>FROM. Seoyeon</span>
-            </div>
-          </SLink>
-        </Item>
+      <LetterBox>
+        <Link to="/letter/seoyeon">
+          <img src="/Images/msg_blue.png" alt="logo_lettering" width="10%" />
+        </Link>
+        <Link to="/letter/gahee">
+          <img src="/Images/msg_yellow.png" alt="logo_lettering" width="10%" />
+        </Link>
+      </LetterBox>
 
-        <Item>
-          <SLink to="/letter/gahee">
-            <div>
-              <img
-                src="/Images/msg_yellow.png"
-                alt="logo_lettering"
-                width="25%"
-              />
-              <span>FROM. Gahee</span>
-            </div>
-          </SLink>
-        </Item>
-      </List>
-
-      <hr />
-      <Route path="/letter" exact render={() => <div>편지 선택하세유</div>} />
+      <Route
+        path="/letter"
+        exact
+        render={() => <div>과연 누구의 편지일까요오옹? 🤔</div>}
+      />
       <Route path="/letter/:writername" component={Writer} />
     </Container>
   );

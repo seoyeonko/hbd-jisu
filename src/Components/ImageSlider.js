@@ -57,6 +57,7 @@ const Comment = styled.div`
   margin: 20px 0px;
   .img_date {
     font-size: 22px;
+    font-weight: bold;
     display: block;
     padding: 8px;
   }
@@ -96,7 +97,7 @@ const ImageSlider = ({ slides }) => {
             >
               <Comment>
                 {index === current && (
-                  <span className="img_date">{slide.date}</span>
+                  <span className="img_date">📅 {slide.date}</span>
                 )}
                 {index === current && (
                   <span className="img_description">{slide.description}</span>
