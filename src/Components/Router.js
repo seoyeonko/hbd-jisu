@@ -14,9 +14,8 @@ const Router = () => {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/cake" component={Cake} />
-        <Route path="/letter" component={Letter} />
-        <Route path="/letter/seoyeon" component={Letter} />
-        <Route path="/letter/gahee" component={Letter} />
+        <Route path="/Letter" component={Letter} />
+        {/* <Route path="/letter/:fromname" component={From} /> */}
         <Route path="/photo" component={Photo} />
         <Redirect from="*" to="/" />
       </Switch>

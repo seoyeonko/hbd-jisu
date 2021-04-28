@@ -4,7 +4,7 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import styled from "styled-components";
 
 const Container = styled.div`
-  margin: 50px 0px;
+  margin: 20px 0px; //
   text-align: center;
   .slider {
     position: relative;
@@ -15,8 +15,8 @@ const Container = styled.div`
   }
 
   .image {
-    width: 35%; //
-    height: 35%;
+    width: 30%; //
+    height: 30%;
     border-radius: 10px;
   }
 
@@ -56,24 +56,23 @@ const Container = styled.div`
 const Comment = styled.div`
   margin: 20px 0px;
   .img_date {
+    font-size: 22px;
     display: block;
-    padding: 10px;
+    padding: 8px;
   }
-  .img_descrption {
+  .img_description {
+    font-size: 20px;
     display: block;
-    padding: 10px;
+    padding: 8px;
   }
 `;
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
-  //   const [data, setData] = useState("");
-  //   const [description, setDescription] = useState("");
   const length = slides.length;
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
-    // SliderData.map((slide, index) => setDescription(slide.description));
   };
 
   const prevSlide = () => {
@@ -95,9 +94,6 @@ const ImageSlider = ({ slides }) => {
               className={index === current ? "slide active" : "slide"}
               key={index}
             >
-              {index === current && (
-                <img src={slide.image} alt="our Photos" className="image" />
-              )}
               <Comment>
                 {index === current && (
                   <span className="img_date">{slide.date}</span>
@@ -106,6 +102,9 @@ const ImageSlider = ({ slides }) => {
                   <span className="img_description">{slide.description}</span>
                 )}
               </Comment>
+              {index === current && (
+                <img src={slide.image} alt="our Photos" className="image" />
+              )}
             </div>
           );
         })}
