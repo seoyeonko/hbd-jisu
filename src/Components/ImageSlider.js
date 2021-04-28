@@ -15,15 +15,15 @@ const Container = styled.div`
   }
 
   .image {
-    width: 768px;
-    height: 768px;
+    width: 35%; //
+    height: 35%;
     border-radius: 10px;
   }
 
   .right-arrow {
     position: absolute;
     top: 80%;
-    right: 20%;
+    right: 25%; //
     font-size: 3rem;
     color: #000;
     z-index: 10;
@@ -34,7 +34,7 @@ const Container = styled.div`
   .left-arrow {
     position: absolute;
     top: 80%;
-    left: 20%;
+    left: 25%; //
     font-size: 3rem;
     color: #000;
     z-index: 10;
@@ -51,6 +51,17 @@ const Container = styled.div`
     opacity: 1;
     transition-duration: 1.2s;
     transform: scale(1.01);
+  }
+`;
+const Comment = styled.div`
+  margin: 20px 0px;
+  .img_date {
+    display: block;
+    padding: 10px;
+  }
+  .img_descrption {
+    display: block;
+    padding: 10px;
   }
 `;
 
@@ -75,7 +86,6 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <>
-      {/* <div>{description}</div> */}
       <Container className="slider">
         <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
         <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
@@ -88,8 +98,14 @@ const ImageSlider = ({ slides }) => {
               {index === current && (
                 <img src={slide.image} alt="our Photos" className="image" />
               )}
-              {index === current && <span>{slide.date + " | "}</span>}
-              {index === current && <span>{slide.description}</span>}
+              <Comment>
+                {index === current && (
+                  <span className="img_date">{slide.date}</span>
+                )}
+                {index === current && (
+                  <span className="img_description">{slide.description}</span>
+                )}
+              </Comment>
             </div>
           );
         })}
