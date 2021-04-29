@@ -50,7 +50,7 @@ const Container = styled.div`
   .slide.active {
     opacity: 1;
     transition-duration: 1.2s;
-    transform: scale(1.01);
+    /* transform: scale(1.01); */
   }
 `;
 const Comment = styled.div`

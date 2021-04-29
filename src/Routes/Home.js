@@ -32,8 +32,8 @@ const Home = () => {
     <Container>
       <p>Scroll Down!</p>
 
-      <MsgImg src="/Images/surprise.png" alt="logo_lettering" width="50%" />
-      <MsgImg src="/Images/thankyou.png" alt="logo_lettering" width="50%" />
+      <MsgImg src="/Images/main_img1.png" alt="main_img" width="65%" />
+      {/* <MsgImg src="/Images/thankyou.png" alt="logo_lettering" width="50%" /> */}
 
       <div>일단 노래 먼저 들어주삼^^</div>
 
