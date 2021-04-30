@@ -16,7 +16,6 @@ const Container = styled.div`
   flex-direction: column;
 `;
 const MsgImg = styled.img`
-  display: flex;
   display: block;
   margin: 0px auto;
   padding: 20px 0px;
@@ -32,10 +31,9 @@ const Home = () => {
     <Container>
       <p>Scroll Down!</p>
 
-      <MsgImg src="/Images/main_img1.png" alt="main_img" width="65%" />
-      {/* <MsgImg src="/Images/thankyou.png" alt="logo_lettering" width="50%" /> */}
-
-      <div>일단 노래 먼저 들어주삼^^</div>
+      <MsgImg src="/Images/main_img2.png" alt="main_img2" width="75%" />
+      <MsgImg src="/Images/main_img1.png" alt="main_img1" width="75%" />
+      <div>일단 노래 먼저 들어주겠니...?</div>
 
       <Player
         url="https://www.youtube.com/watch?v=Ar5-Yitahp8"
