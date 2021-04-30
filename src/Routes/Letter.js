@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, Route } from "react-router-dom";
 import Writer from "../Components/Writer";
 import styled from "styled-components";
@@ -17,17 +17,84 @@ const LetterBox = styled(Link)`
 `;
 
 const Letter = () => {
+  const [msgClick1, setMsgClick1] = useState(true);
+  const [msgClick2, setMsgClick2] = useState(true);
+  const [msgClick3, setMsgClick3] = useState(true);
+  const [msgClick4, setMsgClick4] = useState(true);
+
   return (
     <Container>
       <p>📮 TO. Jisu</p>
 
       <LetterBox>
-        <Link to="/letter/seoyeon">
-          <img src="/Images/msg_blue.png" alt="logo_lettering" width="10%" />
-        </Link>
-        <Link to="/letter/gahee">
-          <img src="/Images/msg_yellow.png" alt="logo_lettering" width="10%" />
-        </Link>
+        {msgClick1 ? (
+          <Link to="/letter/abc" onClick={() => setMsgClick1(!msgClick1)}>
+            <img
+              src="/Images/msg_pink_f.png"
+              alt="logo_lettering"
+              width="10%"
+            />
+          </Link>
+        ) : (
+          <Link to="/letter" onClick={() => setMsgClick1(!msgClick1)}>
+            <img
+              src="/Images/msg_pink_t.png"
+              alt="logo_lettering"
+              width="10%"
+            />
+          </Link>
+        )}
+        {msgClick2 ? (
+          <Link to="/letter/seoyeon" onClick={() => setMsgClick2(!msgClick2)}>
+            <img
+              src="/Images/msg_yellow_f.png"
+              alt="logo_lettering"
+              width="10%"
+            />
+          </Link>
+        ) : (
+          <Link to="/letter" onClick={() => setMsgClick2(!msgClick2)}>
+            <img
+              src="/Images/msg_yellow_t.png"
+              alt="logo_lettering"
+              width="10%"
+            />
+          </Link>
+        )}
+        {msgClick3 ? (
+          <Link to="/letter/def" onClick={() => setMsgClick3(!msgClick3)}>
+            <img
+              src="/Images/msg_blue_f.png"
+              alt="logo_lettering"
+              width="10%"
+            />
+          </Link>
+        ) : (
+          <Link to="/letter" onClick={() => setMsgClick3(!msgClick3)}>
+            <img
+              src="/Images/msg_blue_t.png"
+              alt="logo_lettering"
+              width="10%"
+            />
+          </Link>
+        )}{" "}
+        {msgClick4 ? (
+          <Link to="/letter/gahee" onClick={() => setMsgClick4(!msgClick4)}>
+            <img
+              src="/Images/msg_green_f.png"
+              alt="logo_lettering"
+              width="10%"
+            />
+          </Link>
+        ) : (
+          <Link to="/letter" onClick={() => setMsgClick4(!msgClick4)}>
+            <img
+              src="/Images/msg_green_t.png"
+              alt="logo_lettering"
+              width="10%"
+            />
+          </Link>
+        )}
       </LetterBox>
 
       <Route
