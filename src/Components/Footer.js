@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const FooterBox = styled.div`
   /* 스크롤상황에서도 하단 고정되도록 수정 */
-  margin-top: 100px;
+  margin-top: 150px;
   margin-bottom: 50px;
   font-size: 16px;
   text-align: center;

@@ -11,7 +11,6 @@ const MainLogo = styled.div`
 const MenuBar = styled.header`
   font-size: 28px;
   color: black;
-  /* position: fixed; */
   width: 100%;
   height: 80px;
   display: flex;

@@ -10,11 +10,17 @@ const Container = styled.div`
   div {
     padding: 10px 0px;
   }
+  span {
+    color: #e6ccff;
+    margin: 20px;
+    font-size: 32px;
+    font-weight: bold;
+  }
 `;
 const CakeGif = styled.img`
   display: block;
   margin: 0px auto;
-  padding: 50px;
+  padding-bottom: 50px;
 `;
 const Player = styled(ReactPlayer)`
   display: block;
@@ -25,6 +31,8 @@ const Player = styled(ReactPlayer)`
 const Cake = () => {
   return (
     <Container>
+      <span>H A P P Y B I R T H D A Y</span>
+
       <CakeGif src="/Images/cake.gif" alt="cake_play" width="60%" />
       <Player
         url="https://www.youtube.com/watch?v=42Gtm4-Ax2U"

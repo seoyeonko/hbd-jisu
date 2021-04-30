@@ -15,15 +15,15 @@ const Container = styled.div`
   }
 
   .image {
-    width: 30%; //
-    height: 30%;
+    width: 25%; //
+    height: 25%;
     border-radius: 10px;
   }
 
   .right-arrow {
     position: absolute;
-    top: 80%;
-    right: 25%; //
+    top: 75%;
+    right: 30%; //
     font-size: 3rem;
     color: #000;
     z-index: 10;
@@ -33,8 +33,8 @@ const Container = styled.div`
 
   .left-arrow {
     position: absolute;
-    top: 80%;
-    left: 25%; //
+    top: 75%;
+    left: 30%; //
     font-size: 3rem;
     color: #000;
     z-index: 10;
@@ -51,6 +51,9 @@ const Container = styled.div`
     opacity: 1;
     transition-duration: 1.2s;
     /* transform: scale(1.01); */
+  }
+  audio {
+    margin-top: 30px;
   }
 `;
 const Comment = styled.div`
@@ -109,6 +112,7 @@ const ImageSlider = ({ slides }) => {
             </div>
           );
         })}
+        <audio src="/Media/My_Best_Friend.mp3" autoPlay={true} controls />
       </Container>
     </>
   );

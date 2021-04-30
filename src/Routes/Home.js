@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ReactPlayer from "react-player";
 
 const Container = styled.div`
-  p {
+  span {
     color: #e6ccff;
     margin: 20px;
   }
@@ -29,11 +29,10 @@ const Player = styled(ReactPlayer)`
 const Home = () => {
   return (
     <Container>
-      <p>Scroll Down!</p>
+      <span>Scroll Down!</span>
 
-      <MsgImg src="/Images/main_img2.png" alt="main_img2" width="75%" />
-      <MsgImg src="/Images/main_img1.png" alt="main_img1" width="75%" />
-      <div>일단 노래 먼저 들어주겠니...?</div>
+      <MsgImg src="/Poster/main_img2.png" alt="main_img2" width="75%" />
+      <MsgImg src="/Poster/main_img1.png" alt="main_img1" width="75%" />
 
       <Player
         url="https://www.youtube.com/watch?v=Ar5-Yitahp8"
@@ -42,7 +41,7 @@ const Home = () => {
         playing="true"
         controls
       />
-
+      <div>일단 노래 먼저 들어주겠니...?</div>
       <div>Sang by. SEVENTEEN</div>
     </Container>
   );

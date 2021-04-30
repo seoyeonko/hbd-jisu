@@ -14,6 +14,9 @@ const Container = styled.div`
 const LetterBox = styled(Link)`
   display: block;
   margin: 40px 0px;
+  img {
+    margin: 0px 15px;
+  }
 `;
 
 const Letter = () => {
@@ -64,7 +67,7 @@ const Letter = () => {
         {msgClick3 ? (
           <Link to="/letter/def" onClick={() => setMsgClick3(!msgClick3)}>
             <img
-              src="/Images/msg_blue_f.png"
+              src="/Images/msg_green_f.png"
               alt="logo_lettering"
               width="10%"
             />
@@ -72,16 +75,16 @@ const Letter = () => {
         ) : (
           <Link to="/letter" onClick={() => setMsgClick3(!msgClick3)}>
             <img
-              src="/Images/msg_blue_t.png"
+              src="/Images/msg_green_t.png"
               alt="logo_lettering"
               width="10%"
             />
           </Link>
-        )}{" "}
+        )}
         {msgClick4 ? (
           <Link to="/letter/gahee" onClick={() => setMsgClick4(!msgClick4)}>
             <img
-              src="/Images/msg_green_f.png"
+              src="/Images/msg_blue_f.png"
               alt="logo_lettering"
               width="10%"
             />
@@ -89,7 +92,7 @@ const Letter = () => {
         ) : (
           <Link to="/letter" onClick={() => setMsgClick4(!msgClick4)}>
             <img
-              src="/Images/msg_green_t.png"
+              src="/Images/msg_blue_t.png"
               alt="logo_lettering"
               width="10%"
             />
