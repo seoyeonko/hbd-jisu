@@ -23,6 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # privarcy
-Photos/
-Poster/
-Media/
+# Photos/
+# Poster/
+# Media/
