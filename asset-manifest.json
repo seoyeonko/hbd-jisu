@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/hbd-jisu/static/js/main.fdc048b1.chunk.js",
+    "main.js.map": "/hbd-jisu/static/js/main.fdc048b1.chunk.js.map",
+    "runtime-main.js": "/hbd-jisu/static/js/runtime-main.0c50932f.js",
+    "runtime-main.js.map": "/hbd-jisu/static/js/runtime-main.0c50932f.js.map",
+    "static/js/2.e14b49d8.chunk.js": "/hbd-jisu/static/js/2.e14b49d8.chunk.js",
+    "static/js/2.e14b49d8.chunk.js.map": "/hbd-jisu/static/js/2.e14b49d8.chunk.js.map",
+    "index.html": "/hbd-jisu/index.html",
+    "static/js/2.e14b49d8.chunk.js.LICENSE.txt": "/hbd-jisu/static/js/2.e14b49d8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c50932f.js",
+    "static/js/2.e14b49d8.chunk.js",
+    "static/js/main.fdc048b1.chunk.js"
+  ]
+}
