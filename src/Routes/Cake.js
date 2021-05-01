@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ReactPlayer from "react-player";
+import cake from "../Components/Images/cake.gif";
 
 const Container = styled.div`
   margin-top: 10px;
@@ -33,7 +34,7 @@ const Cake = () => {
     <Container>
       <span>H A P P Y B I R T H D A Y</span>
 
-      <CakeGif src="/Images/cake.gif" alt="cake_play" width="60%" />
+      <CakeGif src={cake} alt="cake_play" width="60%" />
       <Player
         url="https://www.youtube.com/watch?v=42Gtm4-Ax2U"
         width="50vw"

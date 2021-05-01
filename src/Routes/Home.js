@@ -31,8 +31,16 @@ const Home = () => {
     <Container>
       <span>Scroll Down!</span>
 
-      <MsgImg src="/Poster/main_img2.png" alt="main_img2" width="75%" />
-      <MsgImg src="/Poster/main_img1.png" alt="main_img1" width="75%" />
+      <MsgImg
+        src={require("../Components/Poster/main_img2.png").default}
+        alt="main_img2"
+        width="75%"
+      />
+      <MsgImg
+        src={require("../Components/Poster/main_img1.png").default}
+        alt="main_img1"
+        width="75%"
+      />
 
       <Player
         url="https://www.youtube.com/watch?v=Ar5-Yitahp8"

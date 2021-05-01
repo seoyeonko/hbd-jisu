@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import styled from "styled-components";
+import logo_lettering from "./Images/logo_lettering.png";
 
 const MainLogo = styled.div`
   top: 0;
@@ -48,7 +49,7 @@ const Header = ({ location: { pathname } }) => {
       <MainLogo>
         <Link to="/">
           <img
-            src="/Images/logo_lettering.png"
+            src={logo_lettering}
             alt="logo_lettering"
             width="384px"
             height="384px"
