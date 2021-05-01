@@ -31,7 +31,7 @@ const List = styled.ul`
 `;
 const Item = styled.li`
   margin: 0px 80px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  /* font-family: "Comic Sans MS", cursive, sans-serif; */
   font-size: 28px;
   letter-spacing: 1.6px;
   color: #000000;

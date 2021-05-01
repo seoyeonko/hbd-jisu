@@ -112,7 +112,7 @@ const ImageSlider = ({ slides }) => {
             </div>
           );
         })}
-        <audio src="/Media/My_Best_Friend.mp3" autoPlay={true} controls />
+        {/* <audio src="/Media/My_Best_Friend.mp3" autoPlay={true} controls /> */}
       </Container>
     </>
   );
